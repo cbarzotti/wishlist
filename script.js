@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const checkboxes = document.querySelectorAll('.checkbox');
 
     checkboxes.forEach(checkbox => {
+        console.log(checkbox.id);
         checkbox.addEventListener('change', function() {
             const isChecked = this.checked;
             const itemId = this.id;
