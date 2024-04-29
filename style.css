@@ -9,11 +9,7 @@ body {
     height: 100%;
     /* overflow: hidden; */
 }
-@media (orientation: portrait) {
-    body {
-        background-size: auto 100vh; /* Set background size to auto width and 100% height */
-    }
-}
+
 
 .wishlist-container {
     max-width: 600px;
@@ -66,13 +62,27 @@ a:visited {
     color: #23527c;
 }
 
-label {
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides overflowing text */
-    text-overflow: ellipsis; 
-}
-
 label.price {
     position: absolute;
-    right: 20px;
+    right: 15px;
+}
+
+@media (orientation: portrait) {
+    body {
+        background-size: auto 100vh; /* Set background size to auto width and 100% height */
+    }
+    .wishlist {
+        text-align: left;
+    }
+    .item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    label.price {
+        right: 10px;
+    }
+    label {
+        margin-left: 15px;
+    }
+
 }
