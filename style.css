@@ -6,8 +6,8 @@ body {
     background-image: url('3f952fe5f74eb70751cf5d84a499f1c2.gif'); /* Set GIF as background */
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
-    height: 100vh;
+    height: 100%;
+    /* overflow: hidden; */
 }
 @media (orientation: portrait) {
     body {
@@ -17,12 +17,15 @@ body {
 
 .wishlist-container {
     max-width: 600px;
+    max-height: 70vh;
     margin: 50px auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.541);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+
 }
 
 h1 {
