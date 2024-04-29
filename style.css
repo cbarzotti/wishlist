@@ -66,4 +66,7 @@ a:visited {
 .price {
     position: absolute;
     right: 20px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis; 
 }
