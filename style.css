@@ -1,0 +1,67 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-image: url('3f952fe5f74eb70751cf5d84a499f1c2.gif'); /* Set GIF as background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+@media (orientation: portrait) {
+    body {
+        background-size: auto 100vh; /* Set background size to auto width and 100% height */
+    }
+}
+
+.wishlist-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.541);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 0;
+}
+
+.wishlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.checkbox {
+    transform: scale(2);
+    float: left;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #23527c;
+}
+
+.price {
+    float: right;
+}
