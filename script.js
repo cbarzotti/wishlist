@@ -11,19 +11,22 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem(itemId, isChecked);
         });
 
-
+        const isChecked = localStorage.getItem(checkbox.id);
+        console.log(checkbox, isChecked);
+        if (isChecked === 'true') {
+            checkbox.checked = true;
+        };
     });
 
     function refreshState() {
         checkboxes.forEach(checkbox => {
-            
             const isChecked = localStorage.getItem(checkbox.id);
             console.log(checkbox, isChecked);
             if (isChecked === 'true') {
                 checkbox.checked = true;
-            }
-        })
-    }
+            };
+        });
+    };
 
     setInterval(refreshState, 10000);
 });
