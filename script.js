@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const checkboxes = document.querySelectorAll('.checkbox');
 
+    console.log(localStorage);
+
     checkboxes.forEach(checkbox => {
         checkbox.checked = false;
         checkbox.addEventListener('change', function() {
