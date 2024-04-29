@@ -44,11 +44,12 @@ h1 {
     margin-bottom: 15px;
     border-radius: 5px;
     position: relative;
+    align-items: center;
 }
 
 .checkbox {
     transform: scale(2);
-    float: left;
+    float: left;    
 }
 
 a {
@@ -63,5 +64,6 @@ a:visited {
 }
 
 .price {
-    float: right;
+    position: absolute;
+    right: 20px;
 }
