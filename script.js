@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
         checkbox.addEventListener('change', function() {
             const isChecked = this.checked;
             const itemId = this.id;
-
+            console.log("Set item:", itemId, isChecked)
             // Salvataggio dello stato della checkbox nello localStorage
             localStorage.setItem(itemId, isChecked);
         });
 
         const isChecked = localStorage.getItem(checkbox.id);
-        console.log(checkbox, isChecked);
+        console.log("Is Checked:",checkbox.id, isChecked);
         if (isChecked === 'true') {
             checkbox.checked = true;
         };
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function refreshState() {
         checkboxes.forEach(checkbox => {
             const isChecked = localStorage.getItem(checkbox.id);
-            console.log(checkbox, isChecked);
+            console.log("Refreshing:",checkbox.id, isChecked);
             if (isChecked === 'true') {
                 checkbox.checked = true;
             };
