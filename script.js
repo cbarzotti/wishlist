@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Is Checked:",checkbox.id, isChecked);
         if (isChecked === 'true') {
             checkbox.checked = true;
+        }
+        else {
+            checkbox.checked = false;
         };
     });
 
