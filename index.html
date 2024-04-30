@@ -6,6 +6,8 @@
     <title>Wishlist</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
 </head>
 <body>
     <div class="wishlist-container">
@@ -22,32 +24,32 @@
                 <input type="checkbox" class="checkbox" id="item2">
             </li>
             <li class="item">
-                <label for="item3"><a href="https://www.amazon.it/Xbox-Wireless-Controller-Elite-2/dp/B07SR4R8K1/ref=sr_1_1_mod_primary_new?crid=2KRQUITAV5HJ5&dib=eyJ2IjoiMSJ9.Waes8KssucYzqTJ-Gze8R_FRLqKpicULhWG4t2Fepw9BSOI9_D5tLPSauMbG5X6jvyiFLT0Zxz6az67VZF74npj1paCbpNzQeLk3yL2cCfrA4OA-rl5L_qPGLWvGWcYVak7_xqURMT0lhMTmcIN04CkcAO7z5DZ2WdkjN9jAuT3JSjTVRKFVVZVzd8CXzPlRr4BtEhBEM3mw5Q0oERfAeJWDyzd-aejWwf6GekdCjGMh0HB1ThyhU5XgFktD-G3rAtPRS6p6LxsQ6ahWc1BRO2_9eGhchsWvz0r0HAfdy3I.QZsPZZIKLQ4jyr6vhl4drVcw91NgmlAtmyvYV-sJgNQ&dib_tag=se&keywords=xbox+pro+controller+elite+serie+2&qid=1714319759&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=xbox+elite+pro%2Caps%2C137&sr=8-1">Xbox Elite Controller (Black)</a></a></label>
+                <label for="item3"><a href="https://www.amazon.it/Xbox-Wireless-Controller-Elite-2/dp/B07SR4R8K1/ref=sr_1_1_mod_primary_new?crid=2KRQUITAV5HJ5&dib=eyJ2IjoiMSJ9.Waes8KssucYzqTJ-Gze8R_FRLqKpicULhWG4t2Fepw9BSOI9_D5tLPSauMbG5X6jvyiFLT0Zxz6az67VZF74npj1paCbpNzQeLk3yL2cCfrA4OA-rl5L_qPGLWvGWcYVak7_xqURMT0lhMTmcIN04CkcAO7z5DZ2WdkjN9jAuT3JSjTVRKFVVZVzd8CXzPlRr4BtEhBEM3mw5Q0oERfAeJWDyzd-aejWwf6GekdCjGMh0HB1ThyhU5XgFktD-G3rAtPRS6p6LxsQ6ahWc1BRO2_9eGhchsWvz0r0HAfdy3I.QZsPZZIKLQ4jyr6vhl4drVcw91NgmlAtmyvYV-sJgNQ&dib_tag=se&keywords=xbox+pro+controller+elite+serie+2&qid=1714319759&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=xbox+elite+pro%2Caps%2C137&sr=8-1">Xbox Elite Controller (Black)</a></label>
                 <label class="price">~174€</label>
                 <input type="checkbox" class="checkbox" id="item3">
             </li>
             <li class="item">
-                <label for="item4"><a href="https://www.allkeyshop.com/blog/buy-helldivers-2-cd-key-compare-prices/">Helldivers 2</a></a></label>
+                <label for="item4"><a href="https://www.allkeyshop.com/blog/buy-helldivers-2-cd-key-compare-prices/">Helldivers 2</a></label>
                 <label class="price">~30€</label>
                 <input type="checkbox" class="checkbox" id="item4">
             </li>
             <li class="item">
-                <label for="item5"><a href="https://www.allkeyshop.com/blog/buy-dragons-dogma-2-cd-key-compare-prices/">Dragon's Dogma 2</a></a></label>
+                <label for="item5"><a href="https://www.allkeyshop.com/blog/buy-dragons-dogma-2-cd-key-compare-prices/">Dragon's Dogma 2</a></label>
                 <label class="price">~30€</label>
                 <input type="checkbox" class="checkbox" id="item5">
             </li>
             <li class="item">
-                <label for="item6"><a href="https://www.amazon.it/Roulette-Hollow-Dungeons-Dragons-Playing/dp/B0C6DTKMYP/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1QALY6Y1HP6YC&dib=eyJ2IjoiMSJ9.9HTJ-FdoWPeeH_k8DMtn0NYAyr47tWUyj5MjFYULGMH_YjTlBVAH13pX-LMKSl3xQHdeB2rxShxLyhHJCPTPi4KDqeb5NzJXjkLGmG1OJEOlWXoHZ4Xq5E9ferkeJdBgXYQK5kq3Tppq_9eb7-V5vGck_PLAoJWaWYreZfriaF31yqbZ4kQIxNpWpclJXpLC34N9CwKjn2_2zgRiY0JVQJ9JYdAiyQO2RVETZamoGZSyra0LrNnI6R4dtv3ZaMknPW2KkXacFs558QPscpA63DjAnYMLpyY0McrX08Gec-E.psE_q4J96RO8ZuumE5KsDey4gIk-laRmbsarNbXvANA&dib_tag=se&keywords=brass%2Bdice%2Bspin&qid=1714420603&sprefix=brass%2Bdice%2Bspin%2Caps%2C140&sr=8-1&th=1">Metal Dice Spinner (Antique Brass)</a></a></label>
+                <label for="item6"><a href="https://www.amazon.it/Roulette-Hollow-Dungeons-Dragons-Playing/dp/B0C6DTKMYP/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1QALY6Y1HP6YC&dib=eyJ2IjoiMSJ9.9HTJ-FdoWPeeH_k8DMtn0NYAyr47tWUyj5MjFYULGMH_YjTlBVAH13pX-LMKSl3xQHdeB2rxShxLyhHJCPTPi4KDqeb5NzJXjkLGmG1OJEOlWXoHZ4Xq5E9ferkeJdBgXYQK5kq3Tppq_9eb7-V5vGck_PLAoJWaWYreZfriaF31yqbZ4kQIxNpWpclJXpLC34N9CwKjn2_2zgRiY0JVQJ9JYdAiyQO2RVETZamoGZSyra0LrNnI6R4dtv3ZaMknPW2KkXacFs558QPscpA63DjAnYMLpyY0McrX08Gec-E.psE_q4J96RO8ZuumE5KsDey4gIk-laRmbsarNbXvANA&dib_tag=se&keywords=brass%2Bdice%2Bspin&qid=1714420603&sprefix=brass%2Bdice%2Bspin%2Caps%2C140&sr=8-1&th=1">Metal Dice Spinner (Antique Brass)</a></label>
                 <label class="price">~60€</label>
                 <input type="checkbox" class="checkbox" id="item6">
             </li>
             <li class="item">
-                <label for="item7"><a href="https://www.amazon.it/SIHOO-M102C-ribaltabili-regolabile-ergonomiche/dp/B0CLLRNFB8/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3S0Q3OA0KKBCF&dib=eyJ2IjoiMSJ9.NrLFD4J09JWxxDmDRhVpL-rGWQ_DFILjgnkX35MV4vrTkC17zCWBwuLyckARF4cb5EMnJPyAKQZFOHXM9lYNuFnZtAKj9OovH6pYxB7cflOM_Ww4EhFGzsAWoDJ4vbCSVtcyphodZqSwG1AlGIiYEr1u6XBnpYizi_5-jm4tuTPnNVvV-CjF3E0nQ1JIQh5A0NQ02gAIUkiq3gEBBafPfCuggZAWLrEs2_YX1foUnF5FaMpvgCHHMchYkdab7ZA8dyERV1OxyGXW1-5bFF6_Ov1ptrPuWmmdTDcC8Q7OXiE.gcA_IIttNZRmSP8m7LModByOyD2NTJB4zhY6NKjDCVw&dib_tag=se&keywords=ergomax&qid=1714421015&s=kitchen&sprefix=ergomax%2Ckitchen%2C167&sr=1-6&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35&th=1">Sedia da ufficio</a></a></label>
+                <label for="item7"><a href="https://www.amazon.it/SIHOO-M102C-ribaltabili-regolabile-ergonomiche/dp/B0CLLRNFB8/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3S0Q3OA0KKBCF&dib=eyJ2IjoiMSJ9.NrLFD4J09JWxxDmDRhVpL-rGWQ_DFILjgnkX35MV4vrTkC17zCWBwuLyckARF4cb5EMnJPyAKQZFOHXM9lYNuFnZtAKj9OovH6pYxB7cflOM_Ww4EhFGzsAWoDJ4vbCSVtcyphodZqSwG1AlGIiYEr1u6XBnpYizi_5-jm4tuTPnNVvV-CjF3E0nQ1JIQh5A0NQ02gAIUkiq3gEBBafPfCuggZAWLrEs2_YX1foUnF5FaMpvgCHHMchYkdab7ZA8dyERV1OxyGXW1-5bFF6_Ov1ptrPuWmmdTDcC8Q7OXiE.gcA_IIttNZRmSP8m7LModByOyD2NTJB4zhY6NKjDCVw&dib_tag=se&keywords=ergomax&qid=1714421015&s=kitchen&sprefix=ergomax%2Ckitchen%2C167&sr=1-6&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35&th=1">Sedia da ufficio</a></label>
                 <label class="price">~170€</label>
                 <input type="checkbox" class="checkbox" id="item7">
             </li>
             <li class="item">
-                <label for="item8"><a href="https://labottegadelnerd.com/prodotto/il-signore-degli-anelli-anduril-di-aragorn-con-incisione-fodero-in-ecopelle/">Andúril</a></a></label>
+                <label for="item8"><a href="https://labottegadelnerd.com/prodotto/il-signore-degli-anelli-anduril-di-aragorn-con-incisione-fodero-in-ecopelle/">Andúril</a></label>
                 <label class="price">~105€</label>
                 <input type="checkbox" class="checkbox" id="item8">
             </li>
@@ -57,18 +59,20 @@
                 <input type="checkbox" class="checkbox" id="item9">
             </li>
             <li class="item">
-                <label for="item10"><a href="https://www.amazon.it/buoni-regalo/b?ie=UTF8&node=3557017031">Buono Amazon</a></a></label>
+                <label for="item10"><a href="https://www.amazon.it/buoni-regalo/b?ie=UTF8&node=3557017031">Buono Amazon</a></label>
                 <label class="price">A piacere</label>
                 <input type="checkbox" class="checkbox" id="item10">
             </li>
             <li class="item">
-                <label for="item11">Un bacino &#10084;</a></a></label>
+                <label for="item11">Un bacino &#10084;</label>
                 <label class="price">A piacere</label>
                 <input type="checkbox" class="checkbox" id="item11">
             </li>
             <!-- Aggiungi altri prodotti qui -->
         </ul>
     </div>
-    <script src="script.js"></script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+
+    <script type=module src="script.js"></script>
 </body>
 </html>
